@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A05158B1F257303002FFE45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A05158A1F257303002FFE45 /* AppDelegate.swift */; };
+		0A05158D1F257303002FFE45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A05158C1F257303002FFE45 /* ViewController.swift */; };
+		0A0515901F257303002FFE45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A05158E1F257303002FFE45 /* Main.storyboard */; };
+		0A0515921F257303002FFE45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A0515911F257303002FFE45 /* Assets.xcassets */; };
+		0A0515951F257303002FFE45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0515931F257303002FFE45 /* LaunchScreen.storyboard */; };
+		0A0515A01F257303002FFE45 /* ChuvaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A05159F1F257303002FFE45 /* ChuvaTests.swift */; };
+		0A0515AB1F257303002FFE45 /* ChuvaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0515AA1F257303002FFE45 /* ChuvaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A05159C1F257303002FFE45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A05157F1F257303002FFE45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A0515861F257303002FFE45;
+			remoteInfo = Chuva;
+		};
+		0A0515A71F257303002FFE45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A05157F1F257303002FFE45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A0515861F257303002FFE45;
+			remoteInfo = Chuva;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A0515871F257303002FFE45 /* Chuva.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chuva.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A05158A1F257303002FFE45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0A05158C1F257303002FFE45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0A05158F1F257303002FFE45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A0515911F257303002FFE45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A0515941F257303002FFE45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0A0515961F257303002FFE45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A05159B1F257303002FFE45 /* ChuvaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChuvaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A05159F1F257303002FFE45 /* ChuvaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuvaTests.swift; sourceTree = "<group>"; };
+		0A0515A11F257303002FFE45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A0515A61F257303002FFE45 /* ChuvaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChuvaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A0515AA1F257303002FFE45 /* ChuvaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuvaUITests.swift; sourceTree = "<group>"; };
+		0A0515AC1F257303002FFE45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A0515841F257303002FFE45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A0515981F257303002FFE45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A0515A31F257303002FFE45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A05157E1F257303002FFE45 = {
+			isa = PBXGroup;
+			children = (
+				0A0515891F257303002FFE45 /* Chuva */,
+				0A05159E1F257303002FFE45 /* ChuvaTests */,
+				0A0515A91F257303002FFE45 /* ChuvaUITests */,
+				0A0515881F257303002FFE45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A0515881F257303002FFE45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A0515871F257303002FFE45 /* Chuva.app */,
+				0A05159B1F257303002FFE45 /* ChuvaTests.xctest */,
+				0A0515A61F257303002FFE45 /* ChuvaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A0515891F257303002FFE45 /* Chuva */ = {
+			isa = PBXGroup;
+			children = (
+				0A05158A1F257303002FFE45 /* AppDelegate.swift */,
+				0A05158C1F257303002FFE45 /* ViewController.swift */,
+				0A05158E1F257303002FFE45 /* Main.storyboard */,
+				0A0515911F257303002FFE45 /* Assets.xcassets */,
+				0A0515931F257303002FFE45 /* LaunchScreen.storyboard */,
+				0A0515961F257303002FFE45 /* Info.plist */,
+			);
+			path = Chuva;
+			sourceTree = "<group>";
+		};
+		0A05159E1F257303002FFE45 /* ChuvaTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A05159F1F257303002FFE45 /* ChuvaTests.swift */,
+				0A0515A11F257303002FFE45 /* Info.plist */,
+			);
+			path = ChuvaTests;
+			sourceTree = "<group>";
+		};
+		0A0515A91F257303002FFE45 /* ChuvaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0A0515AA1F257303002FFE45 /* ChuvaUITests.swift */,
+				0A0515AC1F257303002FFE45 /* Info.plist */,
+			);
+			path = ChuvaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A0515861F257303002FFE45 /* Chuva */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A0515AF1F257303002FFE45 /* Build configuration list for PBXNativeTarget "Chuva" */;
+			buildPhases = (
+				0A0515831F257303002FFE45 /* Sources */,
+				0A0515841F257303002FFE45 /* Frameworks */,
+				0A0515851F257303002FFE45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chuva;
+			productName = Chuva;
+			productReference = 0A0515871F257303002FFE45 /* Chuva.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A05159A1F257303002FFE45 /* ChuvaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A0515B21F257303002FFE45 /* Build configuration list for PBXNativeTarget "ChuvaTests" */;
+			buildPhases = (
+				0A0515971F257303002FFE45 /* Sources */,
+				0A0515981F257303002FFE45 /* Frameworks */,
+				0A0515991F257303002FFE45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A05159D1F257303002FFE45 /* PBXTargetDependency */,
+			);
+			name = ChuvaTests;
+			productName = ChuvaTests;
+			productReference = 0A05159B1F257303002FFE45 /* ChuvaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0A0515A51F257303002FFE45 /* ChuvaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A0515B51F257303002FFE45 /* Build configuration list for PBXNativeTarget "ChuvaUITests" */;
+			buildPhases = (
+				0A0515A21F257303002FFE45 /* Sources */,
+				0A0515A31F257303002FFE45 /* Frameworks */,
+				0A0515A41F257303002FFE45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A0515A81F257303002FFE45 /* PBXTargetDependency */,
+			);
+			name = ChuvaUITests;
+			productName = ChuvaUITests;
+			productReference = 0A0515A61F257303002FFE45 /* ChuvaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A05157F1F257303002FFE45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Chuva;
+				TargetAttributes = {
+					0A0515861F257303002FFE45 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					0A05159A1F257303002FFE45 = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = 0A0515861F257303002FFE45;
+					};
+					0A0515A51F257303002FFE45 = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = 0A0515861F257303002FFE45;
+					};
+				};
+			};
+			buildConfigurationList = 0A0515821F257303002FFE45 /* Build configuration list for PBXProject "Chuva" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A05157E1F257303002FFE45;
+			productRefGroup = 0A0515881F257303002FFE45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A0515861F257303002FFE45 /* Chuva */,
+				0A05159A1F257303002FFE45 /* ChuvaTests */,
+				0A0515A51F257303002FFE45 /* ChuvaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A0515851F257303002FFE45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0515951F257303002FFE45 /* LaunchScreen.storyboard in Resources */,
+				0A0515921F257303002FFE45 /* Assets.xcassets in Resources */,
+				0A0515901F257303002FFE45 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A0515991F257303002FFE45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A0515A41F257303002FFE45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A0515831F257303002FFE45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A05158D1F257303002FFE45 /* ViewController.swift in Sources */,
+				0A05158B1F257303002FFE45 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A0515971F257303002FFE45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0515A01F257303002FFE45 /* ChuvaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A0515A21F257303002FFE45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0515AB1F257303002FFE45 /* ChuvaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A05159D1F257303002FFE45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A0515861F257303002FFE45 /* Chuva */;
+			targetProxy = 0A05159C1F257303002FFE45 /* PBXContainerItemProxy */;
+		};
+		0A0515A81F257303002FFE45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A0515861F257303002FFE45 /* Chuva */;
+			targetProxy = 0A0515A71F257303002FFE45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A05158E1F257303002FFE45 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A05158F1F257303002FFE45 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0A0515931F257303002FFE45 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A0515941F257303002FFE45 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A0515AD1F257303002FFE45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0A0515AE1F257303002FFE45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A0515B01F257303002FFE45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NC8JXL2H35;
+				INFOPLIST_FILE = Chuva/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.chuva.develop.Chuva;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A0515B11F257303002FFE45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NC8JXL2H35;
+				INFOPLIST_FILE = Chuva/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.chuva.develop.Chuva;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0A0515B31F257303002FFE45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = NC8JXL2H35;
+				INFOPLIST_FILE = ChuvaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.chuva.develop.ChuvaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chuva.app/Chuva";
+			};
+			name = Debug;
+		};
+		0A0515B41F257303002FFE45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = NC8JXL2H35;
+				INFOPLIST_FILE = ChuvaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.chuva.develop.ChuvaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chuva.app/Chuva";
+			};
+			name = Release;
+		};
+		0A0515B61F257303002FFE45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = NC8JXL2H35;
+				INFOPLIST_FILE = ChuvaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.chuva.develop.ChuvaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chuva;
+			};
+			name = Debug;
+		};
+		0A0515B71F257303002FFE45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = NC8JXL2H35;
+				INFOPLIST_FILE = ChuvaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.chuva.develop.ChuvaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chuva;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A0515821F257303002FFE45 /* Build configuration list for PBXProject "Chuva" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A0515AD1F257303002FFE45 /* Debug */,
+				0A0515AE1F257303002FFE45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A0515AF1F257303002FFE45 /* Build configuration list for PBXNativeTarget "Chuva" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A0515B01F257303002FFE45 /* Debug */,
+				0A0515B11F257303002FFE45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0A0515B21F257303002FFE45 /* Build configuration list for PBXNativeTarget "ChuvaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A0515B31F257303002FFE45 /* Debug */,
+				0A0515B41F257303002FFE45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0A0515B51F257303002FFE45 /* Build configuration list for PBXNativeTarget "ChuvaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A0515B61F257303002FFE45 /* Debug */,
+				0A0515B71F257303002FFE45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A05157F1F257303002FFE45 /* Project object */;
+}
