@@ -14,6 +14,7 @@
 		0A0515951F257303002FFE45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0515931F257303002FFE45 /* LaunchScreen.storyboard */; };
 		0A0515A01F257303002FFE45 /* ChuvaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A05159F1F257303002FFE45 /* ChuvaTests.swift */; };
 		0A0515AB1F257303002FFE45 /* ChuvaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0515AA1F257303002FFE45 /* ChuvaUITests.swift */; };
+		0AD3C54A1F2576B500EA517B /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD3C5491F2576B500EA517B /* Eureka.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0A0515A61F257303002FFE45 /* ChuvaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChuvaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A0515AA1F257303002FFE45 /* ChuvaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuvaUITests.swift; sourceTree = "<group>"; };
 		0A0515AC1F257303002FFE45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AD3C5491F2576B500EA517B /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AD3C54A1F2576B500EA517B /* Eureka.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				0A05159E1F257303002FFE45 /* ChuvaTests */,
 				0A0515A91F257303002FFE45 /* ChuvaUITests */,
 				0A0515881F257303002FFE45 /* Products */,
+				0A0515B81F257615002FFE45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +129,14 @@
 			path = ChuvaUITests;
 			sourceTree = "<group>";
 		};
+		0A0515B81F257615002FFE45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AD3C5491F2576B500EA517B /* Eureka.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +147,7 @@
 				0A0515831F257303002FFE45 /* Sources */,
 				0A0515841F257303002FFE45 /* Frameworks */,
 				0A0515851F257303002FFE45 /* Resources */,
+				0AD3C54B1F2576EB00EA517B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -250,6 +263,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AD3C54B1F2576EB00EA517B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Eureka.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A0515831F257303002FFE45 /* Sources */ = {
@@ -420,11 +451,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NC8JXL2H35;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Chuva/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.chuva.develop.Chuva;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -434,11 +470,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NC8JXL2H35;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Chuva/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.chuva.develop.Chuva;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -524,6 +565,7 @@
 				0A0515B11F257303002FFE45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A0515B21F257303002FFE45 /* Build configuration list for PBXNativeTarget "ChuvaTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +574,7 @@
 				0A0515B41F257303002FFE45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A0515B51F257303002FFE45 /* Build configuration list for PBXNativeTarget "ChuvaUITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +583,7 @@
 				0A0515B71F257303002FFE45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
