@@ -2,12 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>SchemeUserState</key>
+	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>Chuva.xcscheme</key>
+		<key>0A0515861F257303002FFE45</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0A05159A1F257303002FFE45</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0A0515A51F257303002FFE45</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
