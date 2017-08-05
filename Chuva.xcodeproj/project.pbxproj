@@ -14,7 +14,9 @@
 		0A0515951F257303002FFE45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0515931F257303002FFE45 /* LaunchScreen.storyboard */; };
 		0A0515A01F257303002FFE45 /* ChuvaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A05159F1F257303002FFE45 /* ChuvaTests.swift */; };
 		0A0515AB1F257303002FFE45 /* ChuvaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0515AA1F257303002FFE45 /* ChuvaUITests.swift */; };
-		0AD3C54A1F2576B500EA517B /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD3C5491F2576B500EA517B /* Eureka.framework */; };
+		0A33904A1F2E648200452EC6 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3390491F2E648200452EC6 /* Eureka.framework */; };
+		0A58DC8F1F2E400500087340 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58DC8D1F2E400500087340 /* Answer.swift */; };
+		0A58DC901F2E400500087340 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58DC8E1F2E400500087340 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +50,9 @@
 		0A0515A61F257303002FFE45 /* ChuvaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChuvaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A0515AA1F257303002FFE45 /* ChuvaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuvaUITests.swift; sourceTree = "<group>"; };
 		0A0515AC1F257303002FFE45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0AD3C5491F2576B500EA517B /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
+		0A3390491F2E648200452EC6 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
+		0A58DC8D1F2E400500087340 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		0A58DC8E1F2E400500087340 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AD3C54A1F2576B500EA517B /* Eureka.framework in Frameworks */,
+				0A33904A1F2E648200452EC6 /* Eureka.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +105,7 @@
 		0A0515891F257303002FFE45 /* Chuva */ = {
 			isa = PBXGroup;
 			children = (
+				0A58DC8C1F2E3FD200087340 /* Models */,
 				0A05158A1F257303002FFE45 /* AppDelegate.swift */,
 				0A05158C1F257303002FFE45 /* ViewController.swift */,
 				0A05158E1F257303002FFE45 /* Main.storyboard */,
@@ -132,9 +137,18 @@
 		0A0515B81F257615002FFE45 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0AD3C5491F2576B500EA517B /* Eureka.framework */,
+				0A3390491F2E648200452EC6 /* Eureka.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A58DC8C1F2E3FD200087340 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A58DC8D1F2E400500087340 /* Answer.swift */,
+				0A58DC8E1F2E400500087340 /* Question.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +301,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A58DC8F1F2E400500087340 /* Answer.swift in Sources */,
+				0A58DC901F2E400500087340 /* Question.swift in Sources */,
 				0A05158D1F257303002FFE45 /* ViewController.swift in Sources */,
 				0A05158B1F257303002FFE45 /* AppDelegate.swift in Sources */,
 			);
@@ -363,6 +379,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -392,7 +410,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos11.0;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -418,6 +436,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -440,7 +460,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos11.0;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -491,6 +511,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = NC8JXL2H35;
 				INFOPLIST_FILE = ChuvaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.chuva.develop.ChuvaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,6 +528,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = NC8JXL2H35;
 				INFOPLIST_FILE = ChuvaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.chuva.develop.ChuvaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -522,6 +544,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = NC8JXL2H35;
 				INFOPLIST_FILE = ChuvaUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.chuva.develop.ChuvaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -537,6 +560,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = NC8JXL2H35;
 				INFOPLIST_FILE = ChuvaUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.chuva.develop.ChuvaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
