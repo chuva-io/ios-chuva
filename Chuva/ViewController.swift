@@ -11,6 +11,8 @@ import Eureka
 
 class ViewController: FormViewController {
     
+    var questions: [BaseQuestion] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,28 +36,24 @@ class ViewController: FormViewController {
         multipleChoiceQuestion.answer = multipleChoiceAnswer
 
         
-        let questions: [BaseQuestion] = [integerQuestion,
-                                         decimalQuestion,
-                                         textQuestion,
-                                         singleChoiceQuestion,
-                                         multipleChoiceQuestion]
+        questions = [integerQuestion,
+                     decimalQuestion,
+                     textQuestion,
+                     singleChoiceQuestion,
+                     multipleChoiceQuestion]
         
         var section = Section()
         section += questions
             .flatMap { $0 as? BaseRowRepresentable }
             .map { $0.baseRow }
         form +++ section
-        
-//        form +++ Section()
-//            <<< integerQuestion.row
-//            <<< decimalQuestion.row
-//            <<< textQuestion.row
-//            <<< singleChoiceQuestion.row
-//            <<< multipleChoiceQuestion.row
     }
     
     @IBAction func submitButtonTapped() {
-        print(form.values())
+        for question in questions {
+            print("Question: \(question.title)\nAnswer: \(String(describing: question.baseAnswer?.baseValue))")
+            print("")
+        }
     }
     
 }
