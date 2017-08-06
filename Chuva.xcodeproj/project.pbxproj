@@ -17,6 +17,9 @@
 		0A33904A1F2E648200452EC6 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3390491F2E648200452EC6 /* Eureka.framework */; };
 		0A58DC8F1F2E400500087340 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58DC8D1F2E400500087340 /* Answer.swift */; };
 		0A58DC901F2E400500087340 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58DC8E1F2E400500087340 /* Question.swift */; };
+		0AF629CE1F3687BD00CED1E2 /* AnswerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF629CD1F3687BD00CED1E2 /* AnswerProtocols.swift */; };
+		0AF629D01F3687E300CED1E2 /* QuestionProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF629CF1F3687E300CED1E2 /* QuestionProtocols.swift */; };
+		0AF629D31F36882500CED1E2 /* RowRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF629D21F36882500CED1E2 /* RowRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		0A3390491F2E648200452EC6 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
 		0A58DC8D1F2E400500087340 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		0A58DC8E1F2E400500087340 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		0AF629CD1F3687BD00CED1E2 /* AnswerProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerProtocols.swift; sourceTree = "<group>"; };
+		0AF629CF1F3687E300CED1E2 /* QuestionProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionProtocols.swift; sourceTree = "<group>"; };
+		0AF629D21F36882500CED1E2 /* RowRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 		0A0515891F257303002FFE45 /* Chuva */ = {
 			isa = PBXGroup;
 			children = (
+				0AF629CC1F36879700CED1E2 /* Protocols */,
 				0A58DC8C1F2E3FD200087340 /* Models */,
 				0A05158A1F257303002FFE45 /* AppDelegate.swift */,
 				0A05158C1F257303002FFE45 /* ViewController.swift */,
@@ -149,6 +156,16 @@
 				0A58DC8E1F2E400500087340 /* Question.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		0AF629CC1F36879700CED1E2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0AF629D21F36882500CED1E2 /* RowRepresentable.swift */,
+				0AF629CD1F3687BD00CED1E2 /* AnswerProtocols.swift */,
+				0AF629CF1F3687E300CED1E2 /* QuestionProtocols.swift */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,7 +319,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A58DC8F1F2E400500087340 /* Answer.swift in Sources */,
+				0AF629D01F3687E300CED1E2 /* QuestionProtocols.swift in Sources */,
 				0A58DC901F2E400500087340 /* Question.swift in Sources */,
+				0AF629D31F36882500CED1E2 /* RowRepresentable.swift in Sources */,
+				0AF629CE1F3687BD00CED1E2 /* AnswerProtocols.swift in Sources */,
 				0A05158D1F257303002FFE45 /* ViewController.swift in Sources */,
 				0A05158B1F257303002FFE45 /* AppDelegate.swift in Sources */,
 			);

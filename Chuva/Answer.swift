@@ -1,54 +1,59 @@
 import Foundation
 
-protocol BaseAnswer {
-    var baseValue: Any? { get set }
-}
-
-protocol TypedAnswer: BaseAnswer {
-    associatedtype Value
-    var value: Value? { get set }
-    init(value: Value?)
-}
-
-extension TypedAnswer {
-    var baseValue: Any? {
-        set { value = newValue as? Value }
-        get { return value }
-    }
-    
-    init(value: Value?) {
-        self.init(value: value)
-        self.value = value
-        self.baseValue = baseValue
-    }
-}
-
-// MARK: Answer Types
-
 struct Answer {
-    
+
     struct Integer: TypedAnswer {
         var value: Int?
+
+        init(value: Value?) {
+            self.value = value
+            self.baseValue = baseValue
+        }
     }
-    
+
     struct Decimal: TypedAnswer {
         var value: Double?
+
+        init(value: Value?) {
+            self.value = value
+            self.baseValue = baseValue
+        }
     }
-    
+
     struct Text: TypedAnswer {
         var value: String?
+
+        init(value: Value?) {
+            self.value = value
+            self.baseValue = baseValue
+        }
     }
-    
+
     struct Time: TypedAnswer {
         var value: Date?
+
+        init(value: Value?) {
+            self.value = value
+            self.baseValue = baseValue
+        }
     }
-    
-    struct SingleChoice<T>: TypedAnswer {
+
+    struct SingleChoice<T: Hashable>: TypedAnswer {
         var value: T?
+
+        init(value: Value?) {
+            self.value = value
+            self.baseValue = baseValue
+        }
     }
-    
-    struct MultipleChoice<T>: TypedAnswer {
-        var value: [T]?
+
+    struct MultipleChoice<T: Hashable>: TypedAnswer {
+        var value: Set<T>?
+
+        init(value: Value?) {
+            self.value = value
+            self.baseValue = baseValue
+        }
     }
-    
+
 }
