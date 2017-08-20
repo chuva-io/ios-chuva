@@ -27,7 +27,7 @@ struct Question {
             r.value = self.answer?.value
             r.onChange { _ in
                 self.answer?.value = r.value
-                print("Question: \(self.title)\n Answer: \(String(describing: self.answer?.value))")
+                print("Question: \(self.title)\nAnswer: \(String(describing: self.answer?.value))")
             }
            return r
         }()
@@ -51,7 +51,7 @@ struct Question {
             r.value = self.answer?.value
             r.onChange {_ in
                 self.answer?.value = r.value
-                print("Question: \(self.title)\n Answer: \(String(describing: self.answer?.value))")
+                print("Question: \(self.title)\nAnswer: \(String(describing: self.answer?.value))")
             }
             return r
         }()
@@ -75,7 +75,7 @@ struct Question {
             r.value = self.answer?.value
             r.onChange {_ in
                 self.answer?.value = r.value
-                print("Question: \(self.title)\n Answer: \(String(describing: self.answer?.value))")
+                print("Question: \(self.title)\nAnswer: \(String(describing: self.answer?.value))")
             }
             return r
         }()
@@ -106,7 +106,7 @@ struct Question {
             r.value = self.answer?.value
             r.onChange { _ in
                 self.answer?.value = r.value
-                print("Question: \(self.title)\n Answer: \(String(describing: self.answer?.value))")
+                print("Question: \(self.title)\nAnswer: \(String(describing: self.answer?.value))")
             }
             return r
         }()
@@ -133,7 +133,7 @@ struct Question {
             r.value = self.answer?.value
             r.onChange { _ in
                 self.answer?.value = r.value
-                print("Question: \(self.title)\n Answer: \(String(describing: self.answer?.value))")
+                print("Question: \(self.title)\nAnswer: \(String(describing: self.answer?.value))")
             }
             return r
         }()

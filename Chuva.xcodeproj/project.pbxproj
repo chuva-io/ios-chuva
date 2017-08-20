@@ -14,6 +14,7 @@
 		0A0515951F257303002FFE45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0515931F257303002FFE45 /* LaunchScreen.storyboard */; };
 		0A0515A01F257303002FFE45 /* ChuvaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A05159F1F257303002FFE45 /* ChuvaTests.swift */; };
 		0A0515AB1F257303002FFE45 /* ChuvaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0515AA1F257303002FFE45 /* ChuvaUITests.swift */; };
+		0A23B8531F4915240034DBEA /* CreateFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A23B8521F4915230034DBEA /* CreateFormVC.swift */; };
 		0A33904A1F2E648200452EC6 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3390491F2E648200452EC6 /* Eureka.framework */; };
 		0A58DC8F1F2E400500087340 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58DC8D1F2E400500087340 /* Answer.swift */; };
 		0A58DC901F2E400500087340 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58DC8E1F2E400500087340 /* Question.swift */; };
@@ -53,6 +54,7 @@
 		0A0515A61F257303002FFE45 /* ChuvaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChuvaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A0515AA1F257303002FFE45 /* ChuvaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuvaUITests.swift; sourceTree = "<group>"; };
 		0A0515AC1F257303002FFE45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A23B8521F4915230034DBEA /* CreateFormVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateFormVC.swift; sourceTree = "<group>"; };
 		0A3390491F2E648200452EC6 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
 		0A58DC8D1F2E400500087340 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		0A58DC8E1F2E400500087340 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				0A58DC8C1F2E3FD200087340 /* Models */,
 				0A05158A1F257303002FFE45 /* AppDelegate.swift */,
 				0A05158C1F257303002FFE45 /* ViewController.swift */,
+				0A23B8521F4915230034DBEA /* CreateFormVC.swift */,
 				0A05158E1F257303002FFE45 /* Main.storyboard */,
 				0A0515911F257303002FFE45 /* Assets.xcassets */,
 				0A0515931F257303002FFE45 /* LaunchScreen.storyboard */,
@@ -324,6 +327,7 @@
 				0AF629D31F36882500CED1E2 /* RowRepresentable.swift in Sources */,
 				0AF629CE1F3687BD00CED1E2 /* AnswerProtocols.swift in Sources */,
 				0A05158D1F257303002FFE45 /* ViewController.swift in Sources */,
+				0A23B8531F4915240034DBEA /* CreateFormVC.swift in Sources */,
 				0A05158B1F257303002FFE45 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
