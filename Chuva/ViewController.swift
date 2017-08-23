@@ -42,11 +42,19 @@ class ViewController: FormViewController {
                      singleChoiceQuestion,
                      multipleChoiceQuestion]
         
-        var section = Section()
+        var section = Eureka.Section()
         section += questions
             .flatMap { $0 as? BaseRowRepresentable }
             .map { $0.baseRow }
         form +++ section
+    }
+    
+    @IBAction func addButtonTapped(_ sender: UIBarButtonItem) {
+        let newFormVC = CreateFormVC()
+        newFormVC.delegate = self
+        
+        let navVC = UINavigationController(rootViewController: newFormVC)
+        present(navVC, animated: true)
     }
     
     @IBAction func submitButtonTapped() {
@@ -55,5 +63,13 @@ class ViewController: FormViewController {
             print("")
         }
     }
+    
+}
+
+extension ViewController: CreateFormDelegate {
+    
+//    func created(form: Form) {
+//        print(form)
+//    }
     
 }
