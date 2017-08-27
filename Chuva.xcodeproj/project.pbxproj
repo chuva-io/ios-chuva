@@ -19,6 +19,7 @@
 		0A23B8531F4915240034DBEA /* CreateQuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A23B8521F4915230034DBEA /* CreateQuestionVC.swift */; };
 		0A58DC8F1F2E400500087340 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58DC8D1F2E400500087340 /* Answer.swift */; };
 		0A58DC901F2E400500087340 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58DC8E1F2E400500087340 /* Question.swift */; };
+		0A626AA31F52677B00733930 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A626AA01F52677100733930 /* Eureka.framework */; };
 		0AF629CE1F3687BD00CED1E2 /* AnswerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF629CD1F3687BD00CED1E2 /* AnswerProtocols.swift */; };
 		0AF629D01F3687E300CED1E2 /* QuestionProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF629CF1F3687E300CED1E2 /* QuestionProtocols.swift */; };
 		0AF629D31F36882500CED1E2 /* RowRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF629D21F36882500CED1E2 /* RowRepresentable.swift */; };
@@ -38,6 +39,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0A0515861F257303002FFE45;
 			remoteInfo = Chuva;
+		};
+		0A626A9F1F52677100733930 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A626A9A1F52677100733930 /* Eureka.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 51729DEB1B9A4F5E004A00EB;
+			remoteInfo = Eureka;
+		};
+		0A626AA11F52677100733930 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A626A9A1F52677100733930 /* Eureka.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 51729DF51B9A4F5E004A00EB;
+			remoteInfo = EurekaTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -60,6 +75,7 @@
 		0A23B8521F4915230034DBEA /* CreateQuestionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateQuestionVC.swift; sourceTree = "<group>"; };
 		0A58DC8D1F2E400500087340 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		0A58DC8E1F2E400500087340 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		0A626A9A1F52677100733930 /* Eureka.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Eureka.xcodeproj; path = ../Eureka/Eureka.xcodeproj; sourceTree = "<group>"; };
 		0AF629CD1F3687BD00CED1E2 /* AnswerProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerProtocols.swift; sourceTree = "<group>"; };
 		0AF629CF1F3687E300CED1E2 /* QuestionProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionProtocols.swift; sourceTree = "<group>"; };
 		0AF629D21F36882500CED1E2 /* RowRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowRepresentable.swift; sourceTree = "<group>"; };
@@ -70,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A33904A1F2E648200452EC6 /* Eureka.framework in Frameworks */,
+				0A626AA31F52677B00733930 /* Eureka.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,9 +163,18 @@
 		0A0515B81F257615002FFE45 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0A3390491F2E648200452EC6 /* Eureka.framework */,
+				0A626A9A1F52677100733930 /* Eureka.xcodeproj */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A626A9B1F52677100733930 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A626AA01F52677100733930 /* Eureka.framework */,
+				0A626AA21F52677100733930 /* EurekaTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		0ADD9B0C1F525DAE00B1B10D /* Protocols */ = {
@@ -200,7 +225,6 @@
 				0A0515831F257303002FFE45 /* Sources */,
 				0A0515841F257303002FFE45 /* Frameworks */,
 				0A0515851F257303002FFE45 /* Resources */,
-				0AD3C54B1F2576EB00EA517B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -281,6 +305,12 @@
 			mainGroup = 0A05157E1F257303002FFE45;
 			productRefGroup = 0A0515881F257303002FFE45 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0A626A9B1F52677100733930 /* Products */;
+					ProjectRef = 0A626A9A1F52677100733930 /* Eureka.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0A0515861F257303002FFE45 /* Chuva */,
@@ -289,6 +319,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0A626AA01F52677100733930 /* Eureka.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Eureka.framework;
+			remoteRef = 0A626A9F1F52677100733930 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0A626AA21F52677100733930 /* EurekaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = EurekaTests.xctest;
+			remoteRef = 0A626AA11F52677100733930 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0A0515851F257303002FFE45 /* Resources */ = {
@@ -316,24 +363,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0AD3C54B1F2576EB00EA517B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
-			);
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Eureka.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A0515831F257303002FFE45 /* Sources */ = {
@@ -457,6 +486,7 @@
 				SDKROOT = iphoneos11.0;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -506,6 +536,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos11.0;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -524,7 +555,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.chuva.develop.Chuva;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -543,7 +574,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.chuva.develop.Chuva;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
