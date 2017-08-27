@@ -113,14 +113,12 @@
 		0A0515891F257303002FFE45 /* Chuva */ = {
 			isa = PBXGroup;
 			children = (
-				0AF629CC1F36879700CED1E2 /* Protocols */,
-				0A58DC8C1F2E3FD200087340 /* Models */,
 				0A05158A1F257303002FFE45 /* AppDelegate.swift */,
-				0A05158C1F257303002FFE45 /* ViewController.swift */,
-				0A23B8521F4915230034DBEA /* CreateFormVC.swift */,
-				0A05158E1F257303002FFE45 /* Main.storyboard */,
+				0ADD9B0C1F525DAE00B1B10D /* Protocols */,
+				0ADD9B0D1F525DD000B1B10D /* Models */,
+				0ADD9B0E1F525E0500B1B10D /* View Controllers */,
+				0ADD9B0F1F525E2200B1B10D /* Storyboards */,
 				0A0515911F257303002FFE45 /* Assets.xcassets */,
-				0A0515931F257303002FFE45 /* LaunchScreen.storyboard */,
 				0A0515961F257303002FFE45 /* Info.plist */,
 			);
 			path = Chuva;
@@ -152,23 +150,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0A58DC8C1F2E3FD200087340 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				0A58DC8D1F2E400500087340 /* Answer.swift */,
-				0A58DC8E1F2E400500087340 /* Question.swift */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-		0AF629CC1F36879700CED1E2 /* Protocols */ = {
+		0ADD9B0C1F525DAE00B1B10D /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				0AF629D21F36882500CED1E2 /* RowRepresentable.swift */,
 				0AF629CD1F3687BD00CED1E2 /* AnswerProtocols.swift */,
 				0AF629CF1F3687E300CED1E2 /* QuestionProtocols.swift */,
 			);
-			name = Protocols;
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0ADD9B0D1F525DD000B1B10D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A58DC8D1F2E400500087340 /* Answer.swift */,
+				0A58DC8E1F2E400500087340 /* Question.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0ADD9B0E1F525E0500B1B10D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0A05158C1F257303002FFE45 /* ViewController.swift */,
+				0A23B8521F4915230034DBEA /* CreateFormVC.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		0ADD9B0F1F525E2200B1B10D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0A05158E1F257303002FFE45 /* Main.storyboard */,
+				0A0515931F257303002FFE45 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
