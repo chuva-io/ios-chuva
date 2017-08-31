@@ -2,43 +2,34 @@ import UIKit
 import Eureka
 
 protocol CreateFormDelegate: class {
-//    func created(form: Form)
+    func cancelActionHandler(vc: CreateFormVC)
+    func doneActionHandler(vc: CreateFormVC, form: [BaseQuestion])
 }
 
 class CreateFormVC: FormViewController {
     
     weak var delegate: CreateFormDelegate?
+    weak var currentQuestionRow: BaseRow?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "New Form"
         prepareBarButtons()
         
-        let questionTitleRow = TextRow("questionTitle") {
-            $0.title = "Question Title"
-            $0.add(rule: RuleRequired(msg: "Question title is required."))
+        let formTitleRow = TextRow("formTitle") {
+            $0.title = "Form Title"
+            $0.add(rule: RuleRequired(msg: "Form title is required."))
         }
         
-        let questionTypePickerRow = AlertRow<String>("questionType") {
-            $0.title = "Question Type"
-            $0.options = ["Integer", "Decimal", "Text", "Single Choice", "Multiple Choice"]
-            $0.add(rule: RuleRequired(msg: "Question type is required."))
-        }
-        
-        let choicesSection = MultivaluedSection(multivaluedOptions: [.Reorder, .Insert, .Delete], header: "Options") {
-            $0.tag = "choicesSection"
-            $0.hidden = Condition.function(["questionType"]) { form in
-                guard let row = form.rowBy(tag: "questionType") as? AlertRow<String>,
-                    row.value == "Single Choice" || row.value == "Multiple Choice" else {
-                        return true
-                }
-                return false
-            }
-            
+        let questionsSection = MultivaluedSection(multivaluedOptions: [.Reorder, .Insert, .Delete], header: "Options") {
+            $0.tag = "questionsSection"
             $0.multivaluedRowToInsertAt = { index in
-                return TextRow() {
-                    $0.placeholder = "Option \(index + 1)"
-                    $0.add(rule: RuleRequired(msg: "You have empty options."))
+                return ButtonRow() { row in
+                    let questionVC = CreateQuestionVC()
+                    questionVC.delegate = self
+                    self.currentQuestionRow = row
+                    self.navigationController?.pushViewController(questionVC, animated: true)
                 }
             }
             
@@ -48,18 +39,18 @@ class CreateFormVC: FormViewController {
                 return ButtonRow(){ row in
                     // Allows me to validate section
                     let optionCountRule = RuleClosure<String> { _ in
-                        return row.section!.count < 3 ? ValidationError(msg: "At least 2 options are required.") : nil
+                        return row.section!.count < 3 ? ValidationError(msg: "At least one question is required.") : nil
                     }
                     row.add(rule: optionCountRule)
-                    row.title = "Add Option"
+                    row.title = "Add Question"
                 }
             }
             
         }
         
         var section = Section()
-        section += [questionTitleRow, questionTypePickerRow]
-        form += [section, choicesSection]
+        section += [formTitleRow]
+        form += [section, questionsSection]
         
     }
     
@@ -69,12 +60,12 @@ class CreateFormVC: FormViewController {
                                                            action: #selector(cancelBarButtonTapped))
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done,
-                                                           target: self,
-                                                           action: #selector(doneBarButtonTapped))
+                                                            target: self,
+                                                            action: #selector(doneBarButtonTapped))
     }
     
     @objc fileprivate func cancelBarButtonTapped() {
-        navigationController?.dismiss(animated: true)
+        delegate?.cancelActionHandler(vc: self)
     }
     
     @objc fileprivate func doneBarButtonTapped() {
@@ -92,8 +83,7 @@ class CreateFormVC: FormViewController {
             // Valid form
             print("Valid form")
             print(form.values())
-//            created(form: form) // Serialize form
-            navigationController?.dismiss(animated: true)
+            delegate?.doneActionHandler(vc: self, form: [])
         }
         else {
             // Invalid form
@@ -104,3 +94,33 @@ class CreateFormVC: FormViewController {
     }
     
 }
+
+extension CreateFormVC: CreateQuestionDelegate {
+    func cancelActionHandler(viewController: CreateQuestionVC) {
+        currentQuestionRow?.baseCell.height = { 0 }
+        currentQuestionRow?.baseCell.isHidden = true
+        currentQuestionRow?.reload()
+        currentQuestionRow = nil
+        if let navVC = viewController.navigationController {
+            navVC.popViewController(animated: true)
+        }
+        else {
+            viewController.dismiss(animated: true)
+        }
+    }
+    
+    func doneActionHandler(viewController: CreateQuestionVC, question: BaseQuestion) {
+        currentQuestionRow?.title = question.title
+        currentQuestionRow?.reload()
+        print(question)
+        currentQuestionRow = nil
+        if let navVC = viewController.navigationController {
+            navVC.popViewController(animated: true)
+        }
+        else {
+            viewController.dismiss(animated: true)
+        }
+    }
+    
+}
+

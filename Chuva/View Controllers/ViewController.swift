@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  Chuva
-//
-//  Created by Nilson Nascimento on 7/23/17.
-//  Copyright © 2017 Chuva. All rights reserved.
-//
-
 import UIKit
 import Eureka
 
@@ -67,9 +59,13 @@ class ViewController: FormViewController {
 }
 
 extension ViewController: CreateFormDelegate {
+    func cancelActionHandler(vc: CreateFormVC) {
+        vc.dismiss(animated: true)
+    }
     
-//    func created(form: Form) {
-//        print(form)
-//    }
+    func doneActionHandler(vc: CreateFormVC, form: [BaseQuestion]) {
+        print(form)
+        vc.dismiss(animated: true)
+    }
     
 }
