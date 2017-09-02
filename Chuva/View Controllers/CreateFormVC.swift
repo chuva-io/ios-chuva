@@ -3,13 +3,15 @@ import Eureka
 
 protocol CreateFormDelegate: class {
     func cancelActionHandler(vc: CreateFormVC)
-    func doneActionHandler(vc: CreateFormVC, form: [BaseQuestion])
+    func doneActionHandler(vc: CreateFormVC, form: (title: String, questions: [BaseQuestion]))
 }
 
 class CreateFormVC: FormViewController {
     
     weak var delegate: CreateFormDelegate?
-    weak var currentQuestionRow: BaseRow?
+    weak var currentQuestionRow: ButtonRow?
+    
+    var questions: [BaseQuestion] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,8 +84,23 @@ class CreateFormVC: FormViewController {
         if (form.validate().isEmpty) {
             // Valid form
             print("Valid form")
-            print(form.values())
-            delegate?.doneActionHandler(vc: self, form: [])
+            
+            let formValues = form.values()
+            print(formValues)
+        
+            let questionTitles = formValues.filter { pair in Int(string: pair.key) != nil }
+                .filter { pair in questions.contains { question in question.title == pair.value as! String } }
+            var filteredQuestions = [BaseQuestion?](repeating: nil, count: questionTitles.count)
+            
+            for (_, pair) in questionTitles.enumerated() {
+                let int = Int(string: pair.key)!
+                filteredQuestions[int] = questions.first { $0.title == pair.value as! String }
+            }
+            
+            let title = formValues["formTitle"] as! String
+            let _form = (title: title,
+                         questions: filteredQuestions.flatMap { $0 })
+            delegate?.doneActionHandler(vc: self, form: _form)
         }
         else {
             // Invalid form
@@ -111,9 +128,10 @@ extension CreateFormVC: CreateQuestionDelegate {
     
     func doneActionHandler(viewController: CreateQuestionVC, created question: BaseQuestion) {
         currentQuestionRow?.title = question.title
+        currentQuestionRow?.value = question.title
         currentQuestionRow?.reload()
-        print(question)
         currentQuestionRow = nil
+        questions.append(question)
         if let navVC = viewController.navigationController {
             navVC.popViewController(animated: true)
         }

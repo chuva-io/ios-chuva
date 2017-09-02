@@ -73,8 +73,9 @@ extension ViewController: CreateFormDelegate {
         vc.dismiss(animated: true)
     }
     
-    func doneActionHandler(vc: CreateFormVC, form: [BaseQuestion]) {
-        print(form)
+    func doneActionHandler(vc: CreateFormVC, form: (title: String, questions: [BaseQuestion])) {
+        print(form.title)
+        print(form.questions)
         vc.dismiss(animated: true)
     }
     

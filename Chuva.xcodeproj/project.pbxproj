@@ -14,7 +14,6 @@
 		0A0515951F257303002FFE45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0515931F257303002FFE45 /* LaunchScreen.storyboard */; };
 		0A0515A01F257303002FFE45 /* ChuvaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A05159F1F257303002FFE45 /* ChuvaTests.swift */; };
 		0A0515AB1F257303002FFE45 /* ChuvaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0515AA1F257303002FFE45 /* ChuvaUITests.swift */; };
-		0A33904A1F2E648200452EC6 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3390491F2E648200452EC6 /* Eureka.framework */; };
 		0A102AEC1F57AF1500F0F841 /* CreateFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A102AEB1F57AF1500F0F841 /* CreateFormVC.swift */; };
 		0A23B8531F4915240034DBEA /* CreateQuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A23B8521F4915230034DBEA /* CreateQuestionVC.swift */; };
 		0A58DC8F1F2E400500087340 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58DC8D1F2E400500087340 /* Answer.swift */; };
@@ -70,7 +69,6 @@
 		0A0515A61F257303002FFE45 /* ChuvaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChuvaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A0515AA1F257303002FFE45 /* ChuvaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuvaUITests.swift; sourceTree = "<group>"; };
 		0A0515AC1F257303002FFE45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A3390491F2E648200452EC6 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
 		0A102AEB1F57AF1500F0F841 /* CreateFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateFormVC.swift; sourceTree = "<group>"; };
 		0A23B8521F4915230034DBEA /* CreateQuestionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateQuestionVC.swift; sourceTree = "<group>"; };
 		0A58DC8D1F2E400500087340 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
