@@ -142,7 +142,14 @@ class CreateQuestionVC: FormViewController {
     }
     
     fileprivate func parseOptions(_ dictionary: [String: Any?]) -> [String] {
-        return []
+        let options = dictionary.filter { pair in Int(string: pair.key) != nil }
+        var strings = [String](repeating: "", count: options.count)
+        
+        for (_, pair) in options.enumerated() {
+            let int = Int(string: pair.key)!
+            strings[int] = pair.value as! String
+        }
+        return strings
     }
     
 }
