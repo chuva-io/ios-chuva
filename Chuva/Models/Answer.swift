@@ -38,7 +38,7 @@ struct Answer {
         }
     }
 
-    struct SingleChoice<T: Hashable>: TypedAnswer {
+    struct SingleChoice<T: Hashable & Codable>: TypedAnswer {
         var value: T?
 
         init(value: Value?) {
@@ -47,7 +47,7 @@ struct Answer {
         }
     }
 
-    struct MultipleChoice<T: Hashable>: TypedAnswer {
+    struct MultipleChoice<T: Hashable & Codable>: TypedAnswer {
         var value: Set<T>?
 
         init(value: Value?) {

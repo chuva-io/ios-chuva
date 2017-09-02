@@ -3,7 +3,7 @@ import Eureka
 
 protocol CreateQuestionDelegate: class {
     func cancelActionHandler(viewController: CreateQuestionVC)
-    func doneActionHandler(viewController: CreateQuestionVC, question: BaseQuestion)
+    func doneActionHandler(viewController: CreateQuestionVC, created question: BaseQuestion)
 }
 
 class CreateQuestionVC: FormViewController {
@@ -97,9 +97,33 @@ class CreateQuestionVC: FormViewController {
         if (form.validate().isEmpty) {
             // Valid form
             print("Valid question")
-            print(form.values())
-//            created(form: form) // Serialize form
-            delegate?.doneActionHandler(viewController: self, question: Question.Text(title: "myQuestion", answer: nil))
+            
+            let formValues = form.values()
+            let questionType = QuestionType(rawValue: formValues["questionType"]! as! String)!
+            let questionTitle = formValues["questionTitle"] as! String
+            let question: BaseQuestion
+            
+            switch questionType {
+            case .integer:
+                question = Question.Integer(title: questionTitle,
+                                            answer: nil)
+            case .decimal:
+                question = Question.Decimal(title: questionTitle,
+                                            answer: nil)
+            case .text:
+                question = Question.Text(title: questionTitle,
+                                         answer: nil)
+            case .singleChoice:
+                question = Question.SingleChoice<String>(title: questionTitle,
+                                                         options: Set<String>(parseOptions(formValues)),
+                                                         answer: nil)
+            case .multipleChoice:
+                question = Question.MultipleChoice<String>(title: questionTitle,
+                                                           options: Set<String>(parseOptions(formValues)),
+                                                           answer: nil)
+            }
+            
+            delegate?.doneActionHandler(viewController: self, created: question)
         }
         else {
             // Invalid form
@@ -107,6 +131,18 @@ class CreateQuestionVC: FormViewController {
             _ = form.validate().map { print($0.msg) }
         }
         
+    }
+    
+    fileprivate enum QuestionType: String {
+        case integer        = "Integer"
+        case decimal        = "Decimal"
+        case text           = "Text"
+        case singleChoice   = "Single Choice"
+        case multipleChoice = "Multiple Choice"
+    }
+    
+    fileprivate func parseOptions(_ dictionary: [String: Any?]) -> [String] {
+        return []
     }
     
 }

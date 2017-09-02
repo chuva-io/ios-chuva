@@ -19,20 +19,30 @@ class ViewController: FormViewController {
 
         let singleChoiceQuestion = Question.SingleChoice<String>(title: "Which hand do you write with?",
                                                                  options: Set(["Left", "Right"]),
-                                                                 answer: nil)
+                                                                 answer: Answer.SingleChoice<String>(value: "Left"))
         
-        let multipleChoiceQuestion = Question.MultipleChoice<UIColor>(title: "Which colors do you like?",
-                                                                      options: [.red, .blue, .green, .yellow],
+        let multipleChoiceQuestion = Question.MultipleChoice<String>(title: "Which colors do you like?",
+                                                                      options: ["Red", "Blue", "Green", "Yellow"],
                                                                       answer: nil)
-        let multipleChoiceAnswer = Answer.MultipleChoice<UIColor>(value: [.red, .green, .yellow])
+        let multipleChoiceAnswer = Answer.MultipleChoice<String>(value: ["Red", "Blue", "Green"])
         multipleChoiceQuestion.answer = multipleChoiceAnswer
 
+        
+        let jsonEncoder = JSONEncoder()
+        let jsonData = try! jsonEncoder.encode(multipleChoiceQuestion)
+        
+        print(jsonData)
+        print(String(data: jsonData, encoding: .utf8)!)
+        print("")
+        
+        jsonEncoder.outputFormatting = .prettyPrinted
+        print(try! jsonEncoder.encode(multipleChoiceQuestion))
+        print(String(data: try! jsonEncoder.encode(multipleChoiceQuestion), encoding: .utf8)!)
         
         questions = [integerQuestion,
                      decimalQuestion,
                      textQuestion,
-                     singleChoiceQuestion,
-                     multipleChoiceQuestion]
+                     singleChoiceQuestion]
         
         var section = Eureka.Section()
         section += questions

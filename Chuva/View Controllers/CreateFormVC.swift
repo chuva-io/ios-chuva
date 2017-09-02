@@ -39,7 +39,7 @@ class CreateFormVC: FormViewController {
                 return ButtonRow(){ row in
                     // Allows me to validate section
                     let optionCountRule = RuleClosure<String> { _ in
-                        return row.section!.count < 3 ? ValidationError(msg: "At least one question is required.") : nil
+                        return row.section!.count < 2 ? ValidationError(msg: "At least one question is required.") : nil
                     }
                     row.add(rule: optionCountRule)
                     row.title = "Add Question"
@@ -71,7 +71,7 @@ class CreateFormVC: FormViewController {
     @objc fileprivate func doneBarButtonTapped() {
         
         // Prepare tags for Eureka validation
-        if let section = form.sectionBy(tag: "choicesSection"),
+        if let section = form.sectionBy(tag: "questionsSection"),
             section.isHidden == false,
             section.count > 2 {
             for i in 0..<section.count - 1 {
@@ -109,7 +109,7 @@ extension CreateFormVC: CreateQuestionDelegate {
         }
     }
     
-    func doneActionHandler(viewController: CreateQuestionVC, question: BaseQuestion) {
+    func doneActionHandler(viewController: CreateQuestionVC, created question: BaseQuestion) {
         currentQuestionRow?.title = question.title
         currentQuestionRow?.reload()
         print(question)

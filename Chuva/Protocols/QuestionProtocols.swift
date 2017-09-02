@@ -1,4 +1,4 @@
-protocol BaseQuestion {
+protocol BaseQuestion: Codable {
     var title: String { get }
     var baseAnswer: BaseAnswer? { get }
 }

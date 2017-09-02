@@ -91,7 +91,7 @@ struct Question {
 //        var answer: Answer.Time?
 //    }
 
-    class SingleChoice<T: Hashable>: TypedQuestion {
+    class SingleChoice<T: Hashable & Codable>: TypedQuestion {
         let title: String
         let options: Set<T>
         var answer: Answer.SingleChoice<T>?
@@ -118,7 +118,7 @@ struct Question {
         }
     }
 
-    class MultipleChoice<T: Hashable>: TypedQuestion {
+    class MultipleChoice<T: Hashable & Codable>: TypedQuestion {
         let title: String
         var options: Set<T>
         var answer: Answer.MultipleChoice<T>?

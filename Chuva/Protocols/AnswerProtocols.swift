@@ -1,4 +1,4 @@
-protocol BaseAnswer {
+protocol BaseAnswer: Codable {
     var baseValue: Any? { get set }
 }
 
