@@ -19,7 +19,18 @@ extension Question {
         
         // MARK: - Serializable
         static func serialize(_ json: [String : AnyObject]) -> SingleChoice<T>? {
-            return SingleChoice<T>(title: "SingleChoice Title", options: [], answer: nil)
+            guard let title = json["title"] as? String,
+                let typeString = json["type"] as? String,
+                QuestionType(rawValue: typeString) == QuestionType.singleChoice,
+                let options = json["options"] as? [T] else {
+                    return nil
+            }
+            
+            guard let answerJson = json["answer"] as? [String: AnyObject],
+                let answer = Answer.SingleChoice<T>.serialize(answerJson) else {
+                    return SingleChoice<T>(title: title, options: Set<T>(options), answer: nil)
+            }
+            return SingleChoice<T>(title: title, options: Set<T>(options), answer: answer)
         }
         
         
@@ -27,7 +38,7 @@ extension Question {
         func deserialize() -> [String : AnyObject?] {
             return ["title": title as AnyObject,
                     "type": type.rawValue as AnyObject,
-                    "options": options as AnyObject,
+                    "options": Array(options) as AnyObject,
                     "answer": answer?.deserialize() as AnyObject]
         }
         

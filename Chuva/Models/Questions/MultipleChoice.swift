@@ -18,7 +18,18 @@ extension Question {
         
         // MARK: - Serializable
         static func serialize(_ json: [String : AnyObject]) -> MultipleChoice<T>? {
-            return MultipleChoice<T>(title: "MultipleChoice Title", options: [], answer: nil)
+            guard let title = json["title"] as? String,
+                let typeString = json["type"] as? String,
+                QuestionType(rawValue: typeString) == QuestionType.multipleChoice,
+                let options = json["options"] as? [T] else {
+                    return nil
+            }
+            
+            guard let answerJson = json["answer"] as? [String: AnyObject],
+                let answer = Answer.MultipleChoice<T>.serialize(answerJson) else {
+                    return MultipleChoice<T>(title: title, options: Set<T>(options), answer: nil)
+            }
+            return MultipleChoice<T>(title: title, options: Set<T>(options), answer: answer)
         }
         
         

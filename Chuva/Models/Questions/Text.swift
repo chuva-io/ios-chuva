@@ -17,7 +17,17 @@ extension Question {
         
         // MARK: - Serializable
         static func serialize(_ json: [String : AnyObject]) -> Text? {
-            return Text(title: "Text Title", answer: nil)
+            guard let title = json["title"] as? String,
+                let typeString = json["type"] as? String,
+                QuestionType(rawValue: typeString) == QuestionType.text else {
+                    return nil
+            }
+            
+            guard let answerJson = json["answer"] as? [String: AnyObject],
+                let answer = Answer.Text.serialize(answerJson) else {
+                    return Text(title: title, answer: nil)
+            }
+            return Text(title: title, answer: answer)
         }
         
         

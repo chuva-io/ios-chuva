@@ -17,7 +17,17 @@ extension Question {
         
         // MARK: - Serializable
         static func serialize(_ json: [String : AnyObject]) -> Decimal? {
-            return Decimal(title: "Decimal Title", answer: nil)
+            guard let title = json["title"] as? String,
+                let typeString = json["type"] as? String,
+                QuestionType(rawValue: typeString) == QuestionType.decimal else {
+                    return nil
+            }
+            
+            guard let answerJson = json["answer"] as? [String: AnyObject],
+                let answer = Answer.Decimal.serialize(answerJson) else {
+                    return Decimal(title: title, answer: nil)
+            }
+            return Decimal(title: title, answer: answer)
         }
         
         

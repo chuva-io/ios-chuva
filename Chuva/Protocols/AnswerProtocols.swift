@@ -2,7 +2,7 @@ protocol BaseAnswer: Deserializable {
     var baseValue: Any? { get set }
 }
 
-protocol TypedAnswer: BaseAnswer {
+protocol TypedAnswer: BaseAnswer, Serializable {
     associatedtype Value: Hashable
     var value: Value? { get set }
     init(value: Value?)
