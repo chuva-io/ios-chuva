@@ -14,6 +14,24 @@ class FormListVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
+        
+        loadForms()
+    }
+    
+    func loadForms() {
+        do {
+            let formData = try Disk.retrieve("forms.json", from: .documents, as: [Data].self)
+            let formJson = try formData.map { try JSONSerialization.jsonObject(with: $0, options: []) as? [String: AnyObject] }
+                .flatMap { $0 }
+            forms = formJson.map { Form.serialize($0) }
+                .flatMap { $0 }
+        }
+        catch {
+            forms = []
+        }
+        defer {
+            tableView.reloadData()
+        }
     }
     
     @IBAction func addButtonTapped(_ sender: UIBarButtonItem) {
@@ -24,12 +42,7 @@ class FormListVC: UIViewController {
         present(navVC, animated: true)
     }
     
-    @IBAction func submitButtonTapped() {
-        for question in questions {
-            print("Question: \(question.title)\nAnswer: \(String(describing: question.baseAnswer?.baseValue))")
-            print("")
-        }
-    }
+    @IBAction func submitButtonTapped() { }
     
 }
 
@@ -66,8 +79,9 @@ extension FormListVC: CreateFormDelegate {
     }
     
     func doneActionHandler(vc: CreateFormVC, form: Form) {
-        forms.append(form)
-        tableView.reloadData()
+        let formData = try! JSONSerialization.data(withJSONObject: form.deserialize(), options: [])
+        try! Disk.append(formData, to: "forms.json", in: .documents)
+        loadForms()
         vc.dismiss(animated: true)
     }
     
