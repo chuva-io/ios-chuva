@@ -19,9 +19,18 @@
 		0A58DC8F1F2E400500087340 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58DC8D1F2E400500087340 /* Answer.swift */; };
 		0A58DC901F2E400500087340 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58DC8E1F2E400500087340 /* Question.swift */; };
 		0A626AA31F52677B00733930 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A626AA01F52677100733930 /* Eureka.framework */; };
+		0AB2516F1F5BAA2B0075AD12 /* Disk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB2516E1F5BAA260075AD12 /* Disk.framework */; };
+		0AB251701F5BAA2B0075AD12 /* Disk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB2516E1F5BAA260075AD12 /* Disk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0AB251721F5BACAB0075AD12 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB251711F5BACAB0075AD12 /* Form.swift */; };
 		0AF629CE1F3687BD00CED1E2 /* AnswerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF629CD1F3687BD00CED1E2 /* AnswerProtocols.swift */; };
 		0AF629D01F3687E300CED1E2 /* QuestionProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF629CF1F3687E300CED1E2 /* QuestionProtocols.swift */; };
 		0AF629D31F36882500CED1E2 /* RowRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF629D21F36882500CED1E2 /* RowRepresentable.swift */; };
+		0AF65F921F5B6A900055697C /* Serializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF65F8F1F5B6A900055697C /* Serializable.swift */; };
+		0AF65F951F5B6F740055697C /* Integer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF65F941F5B6F740055697C /* Integer.swift */; };
+		0AF65F971F5B6F7A0055697C /* Decimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF65F961F5B6F7A0055697C /* Decimal.swift */; };
+		0AF65F991F5B6F7F0055697C /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF65F981F5B6F7F0055697C /* Text.swift */; };
+		0AF65F9B1F5B6F900055697C /* SingleChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF65F9A1F5B6F900055697C /* SingleChoice.swift */; };
+		0AF65F9D1F5B6F980055697C /* MultipleChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF65F9C1F5B6F980055697C /* MultipleChoice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +64,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0AF65FA11F5BA9E30055697C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0AB251701F5BAA2B0075AD12 /* Disk.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0A0515871F257303002FFE45 /* Chuva.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chuva.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A05158A1F257303002FFE45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,9 +97,17 @@
 		0A58DC8D1F2E400500087340 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		0A58DC8E1F2E400500087340 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		0A626A9A1F52677100733930 /* Eureka.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Eureka.xcodeproj; path = ../Eureka/Eureka.xcodeproj; sourceTree = "<group>"; };
+		0AB2516E1F5BAA260075AD12 /* Disk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Disk.framework; path = Carthage/Build/iOS/Disk.framework; sourceTree = "<group>"; };
+		0AB251711F5BACAB0075AD12 /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
 		0AF629CD1F3687BD00CED1E2 /* AnswerProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerProtocols.swift; sourceTree = "<group>"; };
 		0AF629CF1F3687E300CED1E2 /* QuestionProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionProtocols.swift; sourceTree = "<group>"; };
 		0AF629D21F36882500CED1E2 /* RowRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowRepresentable.swift; sourceTree = "<group>"; };
+		0AF65F8F1F5B6A900055697C /* Serializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serializable.swift; sourceTree = "<group>"; };
+		0AF65F941F5B6F740055697C /* Integer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Integer.swift; sourceTree = "<group>"; };
+		0AF65F961F5B6F7A0055697C /* Decimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decimal.swift; sourceTree = "<group>"; };
+		0AF65F981F5B6F7F0055697C /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		0AF65F9A1F5B6F900055697C /* SingleChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleChoice.swift; sourceTree = "<group>"; };
+		0AF65F9C1F5B6F980055697C /* MultipleChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +116,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A626AA31F52677B00733930 /* Eureka.framework in Frameworks */,
+				0AB2516F1F5BAA2B0075AD12 /* Disk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +193,7 @@
 		0A0515B81F257615002FFE45 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0AB2516E1F5BAA260075AD12 /* Disk.framework */,
 				0A626A9A1F52677100733930 /* Eureka.xcodeproj */,
 			);
 			name = Frameworks;
@@ -178,6 +211,7 @@
 		0ADD9B0C1F525DAE00B1B10D /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				0AF65F8F1F5B6A900055697C /* Serializable.swift */,
 				0AF629D21F36882500CED1E2 /* RowRepresentable.swift */,
 				0AF629CD1F3687BD00CED1E2 /* AnswerProtocols.swift */,
 				0AF629CF1F3687E300CED1E2 /* QuestionProtocols.swift */,
@@ -188,8 +222,9 @@
 		0ADD9B0D1F525DD000B1B10D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0AF65F931F5B6F560055697C /* Questions */,
 				0A58DC8D1F2E400500087340 /* Answer.swift */,
-				0A58DC8E1F2E400500087340 /* Question.swift */,
+				0AB251711F5BACAB0075AD12 /* Form.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -213,6 +248,19 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		0AF65F931F5B6F560055697C /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				0A58DC8E1F2E400500087340 /* Question.swift */,
+				0AF65F941F5B6F740055697C /* Integer.swift */,
+				0AF65F961F5B6F7A0055697C /* Decimal.swift */,
+				0AF65F981F5B6F7F0055697C /* Text.swift */,
+				0AF65F9A1F5B6F900055697C /* SingleChoice.swift */,
+				0AF65F9C1F5B6F980055697C /* MultipleChoice.swift */,
+			);
+			path = Questions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -223,6 +271,7 @@
 				0A0515831F257303002FFE45 /* Sources */,
 				0A0515841F257303002FFE45 /* Frameworks */,
 				0A0515851F257303002FFE45 /* Resources */,
+				0AF65FA11F5BA9E30055697C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -370,11 +419,18 @@
 				0A58DC8F1F2E400500087340 /* Answer.swift in Sources */,
 				0AF629D01F3687E300CED1E2 /* QuestionProtocols.swift in Sources */,
 				0A58DC901F2E400500087340 /* Question.swift in Sources */,
+				0AF65F971F5B6F7A0055697C /* Decimal.swift in Sources */,
 				0AF629D31F36882500CED1E2 /* RowRepresentable.swift in Sources */,
 				0AF629CE1F3687BD00CED1E2 /* AnswerProtocols.swift in Sources */,
 				0A05158D1F257303002FFE45 /* FormListVC.swift in Sources */,
+				0AF65F921F5B6A900055697C /* Serializable.swift in Sources */,
+				0AF65F9B1F5B6F900055697C /* SingleChoice.swift in Sources */,
+				0AB251721F5BACAB0075AD12 /* Form.swift in Sources */,
+				0AF65F9D1F5B6F980055697C /* MultipleChoice.swift in Sources */,
+				0AF65F991F5B6F7F0055697C /* Text.swift in Sources */,
 				0A102AEC1F57AF1500F0F841 /* CreateFormVC.swift in Sources */,
 				0A23B8531F4915240034DBEA /* CreateQuestionVC.swift in Sources */,
+				0AF65F951F5B6F740055697C /* Integer.swift in Sources */,
 				0A05158B1F257303002FFE45 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

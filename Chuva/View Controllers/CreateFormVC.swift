@@ -3,7 +3,7 @@ import Eureka
 
 protocol CreateFormDelegate: class {
     func cancelActionHandler(vc: CreateFormVC)
-    func doneActionHandler(vc: CreateFormVC, form: (title: String, questions: [BaseQuestion]))
+    func doneActionHandler(vc: CreateFormVC, form: Form)
 }
 
 class CreateFormVC: FormViewController {
@@ -75,7 +75,7 @@ class CreateFormVC: FormViewController {
         // Prepare tags for Eureka validation
         if let section = form.sectionBy(tag: "questionsSection"),
             section.isHidden == false,
-            section.count > 2 {
+            section.count > 1 {
             for i in 0..<section.count - 1 {
                 section[i].tag = "\(i)"
             }
@@ -98,8 +98,8 @@ class CreateFormVC: FormViewController {
             }
             
             let title = formValues["formTitle"] as! String
-            let _form = (title: title,
-                         questions: filteredQuestions.flatMap { $0 })
+            let _form = Form(title: title,
+                             questions: filteredQuestions.flatMap { $0 })
             delegate?.doneActionHandler(vc: self, form: _form)
         }
         else {

@@ -1,4 +1,4 @@
-protocol BaseAnswer: Codable {
+protocol BaseAnswer: Deserializable {
     var baseValue: Any? { get set }
 }
 
@@ -18,5 +18,9 @@ extension TypedAnswer {
         self.init(value: value)
         self.value = value
         self.baseValue = baseValue
+    }
+    
+    func deserialize() -> [String : AnyObject?] {
+        return ["value": value as AnyObject?]
     }
 }

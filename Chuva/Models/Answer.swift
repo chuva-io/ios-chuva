@@ -54,6 +54,14 @@ struct Answer {
             self.value = value
             self.baseValue = baseValue
         }
+        
+        func deserialize() -> [String : AnyObject?] {
+            guard let value = value else {
+                return ["value": nil]
+            }
+            return ["value": Array(value) as AnyObject]
+            
+        }
     }
 
 }

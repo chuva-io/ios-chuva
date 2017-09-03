@@ -1,12 +1,12 @@
 import UIKit
+import Disk
 
 class FormListVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    typealias FormType = (title: String, questions: [BaseQuestion])
     
     var questions: [BaseQuestion] = []
-    var forms: [FormType] = []
+    var forms: [Form] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,7 +65,7 @@ extension FormListVC: CreateFormDelegate {
         vc.dismiss(animated: true)
     }
     
-    func doneActionHandler(vc: CreateFormVC, form: (title: String, questions: [BaseQuestion])) {
+    func doneActionHandler(vc: CreateFormVC, form: Form) {
         forms.append(form)
         tableView.reloadData()
         vc.dismiss(animated: true)
