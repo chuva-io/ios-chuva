@@ -19,6 +19,9 @@
 		0A58DC8F1F2E400500087340 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58DC8D1F2E400500087340 /* Answer.swift */; };
 		0A58DC901F2E400500087340 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58DC8E1F2E400500087340 /* Question.swift */; };
 		0A626AA31F52677B00733930 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A626AA01F52677100733930 /* Eureka.framework */; };
+		0A7404A61FAEB3850099E245 /* LargeInlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7404A41FAEB3850099E245 /* LargeInlineTextField.swift */; };
+		0A7404A71FAEB3850099E245 /* LargeInlineTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7404A51FAEB3850099E245 /* LargeInlineTextField.xib */; };
+		0A7404AE1FAEB67A0099E245 /* LargeInlineTextFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7404AD1FAEB67A0099E245 /* LargeInlineTextFieldViewModel.swift */; };
 		0AAF998B1FAEA7F900FDC407 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAF99821FAEA7ED00FDC407 /* ReactiveCocoa.framework */; };
 		0AAF99A41FAEA81000FDC407 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAF999B1FAEA80C00FDC407 /* ReactiveSwift.framework */; };
 		0AAF99BD1FAEA82200FDC407 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAF99B41FAEA81D00FDC407 /* Result.framework */; };
@@ -247,6 +250,11 @@
 		0A58DC8D1F2E400500087340 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		0A58DC8E1F2E400500087340 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		0A626A9A1F52677100733930 /* Eureka.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Eureka.xcodeproj; path = ../Eureka/Eureka.xcodeproj; sourceTree = "<group>"; };
+		0A7404A41FAEB3850099E245 /* LargeInlineTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeInlineTextField.swift; sourceTree = "<group>"; };
+		0A7404A51FAEB3850099E245 /* LargeInlineTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LargeInlineTextField.xib; sourceTree = "<group>"; };
+		0A7404AD1FAEB67A0099E245 /* LargeInlineTextFieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeInlineTextFieldViewModel.swift; sourceTree = "<group>"; };
+		0AAF996C1FAE9F1400FDC407 /* LargeInlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeInlineTextField.swift; sourceTree = "<group>"; };
+		0AAF996E1FAE9F4000FDC407 /* LargeInlineTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LargeInlineTextField.xib; sourceTree = "<group>"; };
 		0AAF99711FAEA7ED00FDC407 /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = Carthage/Checkouts/ReactiveCocoa/ReactiveCocoa.xcodeproj; sourceTree = "<group>"; };
 		0AAF998C1FAEA80C00FDC407 /* ReactiveSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveSwift.xcodeproj; path = Carthage/Checkouts/ReactiveSwift/ReactiveSwift.xcodeproj; sourceTree = "<group>"; };
 		0AAF99A51FAEA81D00FDC407 /* Result.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Result.xcodeproj; path = Carthage/Checkouts/Result/Result.xcodeproj; sourceTree = "<group>"; };
@@ -301,6 +309,7 @@
 				0A0515A91F257303002FFE45 /* ChuvaUITests */,
 				0A0515881F257303002FFE45 /* Products */,
 				0A0515B81F257615002FFE45 /* Frameworks */,
+				0A74048A1FAEB35D0099E245 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -320,6 +329,8 @@
 				0A05158A1F257303002FFE45 /* AppDelegate.swift */,
 				0ADD9B0C1F525DAE00B1B10D /* Protocols */,
 				0ADD9B0D1F525DD000B1B10D /* Models */,
+				0A7404A31FAEB3850099E245 /* Views */,
+				0A7404AC1FAEB6120099E245 /* View Models */,
 				0ADD9B0E1F525E0500B1B10D /* View Controllers */,
 				0ADD9B0F1F525E2200B1B10D /* Storyboards */,
 				0A0515911F257303002FFE45 /* Assets.xcassets */,
@@ -365,6 +376,32 @@
 				0A626AA21F52677100733930 /* EurekaTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		0A74048A1FAEB35D0099E245 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				0AAF996C1FAE9F1400FDC407 /* LargeInlineTextField.swift */,
+				0AAF996E1FAE9F4000FDC407 /* LargeInlineTextField.xib */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		0A7404A31FAEB3850099E245 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A7404A41FAEB3850099E245 /* LargeInlineTextField.swift */,
+				0A7404A51FAEB3850099E245 /* LargeInlineTextField.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0A7404AC1FAEB6120099E245 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A7404AD1FAEB67A0099E245 /* LargeInlineTextFieldViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 		0AAF99721FAEA7ED00FDC407 /* Products */ = {
@@ -749,6 +786,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A7404A71FAEB3850099E245 /* LargeInlineTextField.xib in Resources */,
 				0A0515951F257303002FFE45 /* LaunchScreen.storyboard in Resources */,
 				0A0515921F257303002FFE45 /* Assets.xcassets in Resources */,
 				0A0515901F257303002FFE45 /* Main.storyboard in Resources */,
@@ -776,9 +814,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A7404A61FAEB3850099E245 /* LargeInlineTextField.swift in Sources */,
 				0A58DC8F1F2E400500087340 /* Answer.swift in Sources */,
 				0AF629D01F3687E300CED1E2 /* QuestionProtocols.swift in Sources */,
 				0A58DC901F2E400500087340 /* Question.swift in Sources */,
+				0A7404AE1FAEB67A0099E245 /* LargeInlineTextFieldViewModel.swift in Sources */,
 				0AF65F971F5B6F7A0055697C /* Decimal.swift in Sources */,
 				0AF629D31F36882500CED1E2 /* RowRepresentable.swift in Sources */,
 				0AF629CE1F3687BD00CED1E2 /* AnswerProtocols.swift in Sources */,
