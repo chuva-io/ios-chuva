@@ -80,17 +80,58 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RvJ-rg-nlx" customClass="LargeInlineTextField" customModule="Chuva" customModuleProvider="target">
-                                <rect key="frame" x="47" y="291.5" width="280" height="84"/>
+                                <rect key="frame" x="47" y="67" width="280" height="84"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="8MQ-Ce-K2j"/>
                                     <constraint firstAttribute="width" constant="280" id="8lW-yL-vZX"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bIB-tp-Kbo" customClass="LargeInlineTextField" customModule="Chuva" customModuleProvider="target">
+                                <rect key="frame" x="47" y="151" width="280" height="84"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="i8j-J3-cfM"/>
+                                    <constraint firstAttribute="height" constant="84" id="oKS-07-tkH"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MWi-Ci-lWa" customClass="LargeInlineTextField" customModule="Chuva" customModuleProvider="target">
+                                <rect key="frame" x="47" y="235" width="280" height="84"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="3ZT-rb-Cxr"/>
+                                    <constraint firstAttribute="height" constant="84" id="f2J-Wd-HY5"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Pd-Wr-GfE" customClass="LargeInlineTextField" customModule="Chuva" customModuleProvider="target">
+                                <rect key="frame" x="47" y="319" width="280" height="84"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="AYy-DB-hRu"/>
+                                    <constraint firstAttribute="height" constant="84" id="aPi-cN-Wbd"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aOv-vn-d97" customClass="LargeInlineTextField" customModule="Chuva" customModuleProvider="target">
+                                <rect key="frame" x="47" y="403" width="280" height="84"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="5hh-xC-9Ak"/>
+                                    <constraint firstAttribute="width" constant="280" id="HOe-R6-4Ok"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.56470588239999997" green="0.82745098039999998" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="RvJ-rg-nlx" firstAttribute="centerY" secondItem="VQr-34-Zv8" secondAttribute="centerY" id="cRL-g3-DJs"/>
+                            <constraint firstItem="RvJ-rg-nlx" firstAttribute="centerX" secondItem="VQr-34-Zv8" secondAttribute="centerX" id="2SS-U5-U0f"/>
+                            <constraint firstItem="MWi-Ci-lWa" firstAttribute="centerX" secondItem="VQr-34-Zv8" secondAttribute="centerX" id="2Ux-1h-9jm"/>
+                            <constraint firstItem="RvJ-rg-nlx" firstAttribute="top" secondItem="Xgf-Iv-SlU" secondAttribute="bottom" constant="47" id="6pP-vo-pTa"/>
+                            <constraint firstItem="MWi-Ci-lWa" firstAttribute="top" secondItem="bIB-tp-Kbo" secondAttribute="bottom" id="7IT-1n-TyU"/>
+                            <constraint firstItem="bIB-tp-Kbo" firstAttribute="centerX" secondItem="VQr-34-Zv8" secondAttribute="centerX" id="HWo-Pt-ZAj"/>
+                            <constraint firstItem="aOv-vn-d97" firstAttribute="top" secondItem="0Pd-Wr-GfE" secondAttribute="bottom" id="IQK-d6-fek"/>
+                            <constraint firstItem="bIB-tp-Kbo" firstAttribute="top" secondItem="RvJ-rg-nlx" secondAttribute="bottom" id="MQO-gz-UJ6"/>
+                            <constraint firstItem="aOv-vn-d97" firstAttribute="centerX" secondItem="VQr-34-Zv8" secondAttribute="centerX" id="RsH-8N-kxy"/>
+                            <constraint firstItem="0Pd-Wr-GfE" firstAttribute="centerX" secondItem="VQr-34-Zv8" secondAttribute="centerX" id="Yii-Zc-XBm"/>
+                            <constraint firstItem="0Pd-Wr-GfE" firstAttribute="top" secondItem="MWi-Ci-lWa" secondAttribute="bottom" id="aZN-ru-vo4"/>
                             <constraint firstItem="RvJ-rg-nlx" firstAttribute="centerX" secondItem="VQr-34-Zv8" secondAttribute="centerX" id="sZr-dl-u2K"/>
                         </constraints>
                     </view>

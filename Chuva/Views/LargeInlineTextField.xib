@@ -65,7 +65,7 @@
                 <constraint firstItem="275-8w-VBr" firstAttribute="top" secondItem="TOL-cK-yy5" secondAttribute="bottom" constant="6" id="rBW-nB-Igi"/>
                 <constraint firstAttribute="bottom" secondItem="IWB-Nw-PIm" secondAttribute="bottom" constant="6" id="rWJ-oF-4eA"/>
                 <constraint firstItem="8PV-ar-utX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="6" id="tgr-DV-weU"/>
-                <constraint firstItem="8PV-ar-utX" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" priority="750" constant="2" id="zmt-Db-SoZ"/>
+                <constraint firstItem="8PV-ar-utX" firstAttribute="bottom" secondItem="TOL-cK-yy5" secondAttribute="top" priority="750" constant="-2" id="zmt-Db-SoZ"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
