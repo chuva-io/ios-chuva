@@ -1,4 +1,5 @@
 github "ReactiveCocoa/ReactiveCocoa" "6.0.2"
 github "ReactiveCocoa/ReactiveSwift" "2.0.1"
+github "ViccAlexander/Chameleon" "2.2.0"
 github "antitypical/Result" "3.2.4"
 github "saoudrizwan/Disk" "0.3.1"
