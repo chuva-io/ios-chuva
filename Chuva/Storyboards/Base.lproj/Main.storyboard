@@ -103,19 +103,19 @@
                                     <constraint firstAttribute="height" constant="84" id="f2J-Wd-HY5"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Pd-Wr-GfE" customClass="InlineTextField" customModule="Chuva" customModuleProvider="target">
-                                <rect key="frame" x="47" y="319" width="280" height="84"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Pd-Wr-GfE" customClass="TextField" customModule="Chuva" customModuleProvider="target">
+                                <rect key="frame" x="47" y="319" width="280" height="45"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="280" id="AYy-DB-hRu"/>
-                                    <constraint firstAttribute="height" constant="84" id="aPi-cN-Wbd"/>
+                                    <constraint firstAttribute="height" constant="45" id="aPi-cN-Wbd"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aOv-vn-d97" customClass="InlineTextField" customModule="Chuva" customModuleProvider="target">
-                                <rect key="frame" x="47" y="403" width="280" height="84"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aOv-vn-d97" customClass="TextField" customModule="Chuva" customModuleProvider="target">
+                                <rect key="frame" x="47" y="364" width="280" height="45"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="84" id="5hh-xC-9Ak"/>
+                                    <constraint firstAttribute="height" constant="45" id="5hh-xC-9Ak"/>
                                     <constraint firstAttribute="width" constant="280" id="HOe-R6-4Ok"/>
                                 </constraints>
                             </view>

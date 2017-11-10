@@ -6,7 +6,7 @@ import Chameleon
 @IBDesignable
 class InlineTextField: UIView {
 
-    private let viewModel: InlineTextFieldViewModelType = InlineTextFieldViewModel(title: "first name", style: .large)
+    private let viewModel: InlineTextFieldViewModelType = InlineTextFieldViewModel(title: "first name", style: .normal)
 
     @IBOutlet fileprivate weak var titleLabel: UILabel!
     @IBOutlet fileprivate weak var valueTextField: UITextField!

@@ -26,7 +26,10 @@
 		0A5D6F321FB1557A0097B194 /* Disk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5D6F2C1FB155730097B194 /* Disk.framework */; };
 		0A7404A61FAEB3850099E245 /* InlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7404A41FAEB3850099E245 /* InlineTextField.swift */; };
 		0A7404A71FAEB3850099E245 /* InlineTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7404A51FAEB3850099E245 /* InlineTextField.xib */; };
-		0A7404AE1FAEB67A0099E245 /* InlineTextFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7404AD1FAEB67A0099E245 /* InlineTextFieldViewModel.swift */; };
+		0A7404AE1FAEB67A0099E245 /* TextFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7404AD1FAEB67A0099E245 /* TextFieldViewModel.swift */; };
+		0A7B6E011FB55269003B31DD /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B6DFF1FB55269003B31DD /* TextField.swift */; };
+		0A7B6E021FB55269003B31DD /* TextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7B6E001FB55269003B31DD /* TextField.xib */; };
+		0A7B6E051FB5548E003B31DD /* InlineTextFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B6E041FB5548E003B31DD /* InlineTextFieldViewModel.swift */; };
 		0AB251721F5BACAB0075AD12 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB251711F5BACAB0075AD12 /* Form.swift */; };
 		0AF629CE1F3687BD00CED1E2 /* AnswerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF629CD1F3687BD00CED1E2 /* AnswerProtocols.swift */; };
 		0AF629D01F3687E300CED1E2 /* QuestionProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF629CF1F3687E300CED1E2 /* QuestionProtocols.swift */; };
@@ -385,7 +388,10 @@
 		0A626A9A1F52677100733930 /* Eureka.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Eureka.xcodeproj; path = ../Eureka/Eureka.xcodeproj; sourceTree = "<group>"; };
 		0A7404A41FAEB3850099E245 /* InlineTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InlineTextField.swift; sourceTree = "<group>"; };
 		0A7404A51FAEB3850099E245 /* InlineTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InlineTextField.xib; sourceTree = "<group>"; };
-		0A7404AD1FAEB67A0099E245 /* InlineTextFieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineTextFieldViewModel.swift; sourceTree = "<group>"; };
+		0A7404AD1FAEB67A0099E245 /* TextFieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewModel.swift; sourceTree = "<group>"; };
+		0A7B6DFF1FB55269003B31DD /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		0A7B6E001FB55269003B31DD /* TextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextField.xib; sourceTree = "<group>"; };
+		0A7B6E041FB5548E003B31DD /* InlineTextFieldViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InlineTextFieldViewModel.swift; sourceTree = "<group>"; };
 		0AA1C35C1FAFFB9100009CD2 /* Chameleon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Chameleon.xcodeproj; path = Carthage/Checkouts/Chameleon/Chameleon.xcodeproj; sourceTree = "<group>"; };
 		0AAF996C1FAE9F1400FDC407 /* LargeInlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeInlineTextField.swift; sourceTree = "<group>"; };
 		0AAF996E1FAE9F4000FDC407 /* LargeInlineTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LargeInlineTextField.xib; sourceTree = "<group>"; };
@@ -723,6 +729,7 @@
 		0A7404A31FAEB3850099E245 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0A7B6E031FB55270003B31DD /* TextField */,
 				0A7B6DDF1FB5515F003B31DD /* InlineTextField */,
 			);
 			path = Views;
@@ -731,7 +738,8 @@
 		0A7404AC1FAEB6120099E245 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				0A7404AD1FAEB67A0099E245 /* InlineTextFieldViewModel.swift */,
+				0A7B6E041FB5548E003B31DD /* InlineTextFieldViewModel.swift */,
+				0A7404AD1FAEB67A0099E245 /* TextFieldViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -743,6 +751,15 @@
 				0A7404A51FAEB3850099E245 /* InlineTextField.xib */,
 			);
 			path = InlineTextField;
+			sourceTree = "<group>";
+		};
+		0A7B6E031FB55270003B31DD /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				0A7B6DFF1FB55269003B31DD /* TextField.swift */,
+				0A7B6E001FB55269003B31DD /* TextField.xib */,
+			);
+			path = TextField;
 			sourceTree = "<group>";
 		};
 		0AA1C35D1FAFFB9100009CD2 /* Products */ = {
@@ -1207,6 +1224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A7B6E021FB55269003B31DD /* TextField.xib in Resources */,
 				0A7404A71FAEB3850099E245 /* InlineTextField.xib in Resources */,
 				0A0515951F257303002FFE45 /* LaunchScreen.storyboard in Resources */,
 				0A0515921F257303002FFE45 /* Assets.xcassets in Resources */,
@@ -1264,17 +1282,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A7B6E051FB5548E003B31DD /* InlineTextFieldViewModel.swift in Sources */,
 				0A7404A61FAEB3850099E245 /* InlineTextField.swift in Sources */,
 				0A58DC8F1F2E400500087340 /* Answer.swift in Sources */,
 				0AF629D01F3687E300CED1E2 /* QuestionProtocols.swift in Sources */,
 				0A58DC901F2E400500087340 /* Question.swift in Sources */,
-				0A7404AE1FAEB67A0099E245 /* InlineTextFieldViewModel.swift in Sources */,
+				0A7404AE1FAEB67A0099E245 /* TextFieldViewModel.swift in Sources */,
 				0AF65F971F5B6F7A0055697C /* Decimal.swift in Sources */,
 				0AF629D31F36882500CED1E2 /* RowRepresentable.swift in Sources */,
 				0AF629CE1F3687BD00CED1E2 /* AnswerProtocols.swift in Sources */,
 				0A05158D1F257303002FFE45 /* FormListVC.swift in Sources */,
 				0AF65F921F5B6A900055697C /* Serializable.swift in Sources */,
 				0AF65F9B1F5B6F900055697C /* SingleChoice.swift in Sources */,
+				0A7B6E011FB55269003B31DD /* TextField.swift in Sources */,
 				0AB251721F5BACAB0075AD12 /* Form.swift in Sources */,
 				0AF65F9D1F5B6F980055697C /* MultipleChoice.swift in Sources */,
 				0AF65F991F5B6F7F0055697C /* Text.swift in Sources */,
