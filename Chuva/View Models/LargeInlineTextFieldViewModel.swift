@@ -1,6 +1,4 @@
-import Foundation
 import ReactiveSwift
-import Result
 
 public protocol LargeInlineTextFieldViewModelType {
     var inputs: LargeInlineTextFieldViewModelInputs { get }
@@ -12,16 +10,22 @@ public protocol LargeInlineTextFieldViewModelInputs {
 }
 
 public protocol LargeInlineTextFieldViewModelOutputs {
-    var titleText:  Property<String> { get }
-    var valueText:  Property<String?> { get }
-    var errorText:  Property<String?> { get }
+    var style: Property<Style> { get }
+    var titleText: Property<String> { get }
+    var valueText: Property<String?> { get }
+    var errorText: Property<String?> { get }
     
     var valueIsHidden: Property<Bool> { get }
 }
 
+public enum Style {
+    case large, normal
+}
+
 public final class LargeInlineTextFieldViewModel: LargeInlineTextFieldViewModelType, LargeInlineTextFieldViewModelInputs,  LargeInlineTextFieldViewModelOutputs {
     
-    public init(title: String) {
+    public init(title: String, style: Style) {
+        self.style = Property(value: style)
         titleText = Property(value: title)
         
         valueText = .init(initial: nil,
@@ -42,9 +46,10 @@ public final class LargeInlineTextFieldViewModel: LargeInlineTextFieldViewModelT
 
     
     //MARK: Outputs
+    public let style: Property<Style>
     public let titleText: Property<String>
     public let valueText: Property<String?>
-    public let errorText: Property<String?> = Property(value: nil)
+    public let errorText: Property<String?> = Property(value: "error text")
     
     public var valueIsHidden: Property<Bool>
 

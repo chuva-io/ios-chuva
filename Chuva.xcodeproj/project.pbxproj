@@ -24,8 +24,8 @@
 		0A5D6EBB1FB155690097B194 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAF999B1FAEA80C00FDC407 /* ReactiveSwift.framework */; };
 		0A5D6EBC1FB155690097B194 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAF99B41FAEA81D00FDC407 /* Result.framework */; };
 		0A5D6F321FB1557A0097B194 /* Disk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5D6F2C1FB155730097B194 /* Disk.framework */; };
-		0A7404A61FAEB3850099E245 /* LargeInlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7404A41FAEB3850099E245 /* LargeInlineTextField.swift */; };
-		0A7404A71FAEB3850099E245 /* LargeInlineTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7404A51FAEB3850099E245 /* LargeInlineTextField.xib */; };
+		0A7404A61FAEB3850099E245 /* InlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7404A41FAEB3850099E245 /* InlineTextField.swift */; };
+		0A7404A71FAEB3850099E245 /* InlineTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7404A51FAEB3850099E245 /* InlineTextField.xib */; };
 		0A7404AE1FAEB67A0099E245 /* LargeInlineTextFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7404AD1FAEB67A0099E245 /* LargeInlineTextFieldViewModel.swift */; };
 		0AB251721F5BACAB0075AD12 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB251711F5BACAB0075AD12 /* Form.swift */; };
 		0AF629CE1F3687BD00CED1E2 /* AnswerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF629CD1F3687BD00CED1E2 /* AnswerProtocols.swift */; };
@@ -383,8 +383,8 @@
 		0A5D6F271FB155730097B194 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		0A5D6F281FB155730097B194 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		0A626A9A1F52677100733930 /* Eureka.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Eureka.xcodeproj; path = ../Eureka/Eureka.xcodeproj; sourceTree = "<group>"; };
-		0A7404A41FAEB3850099E245 /* LargeInlineTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeInlineTextField.swift; sourceTree = "<group>"; };
-		0A7404A51FAEB3850099E245 /* LargeInlineTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LargeInlineTextField.xib; sourceTree = "<group>"; };
+		0A7404A41FAEB3850099E245 /* InlineTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InlineTextField.swift; sourceTree = "<group>"; };
+		0A7404A51FAEB3850099E245 /* InlineTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InlineTextField.xib; sourceTree = "<group>"; };
 		0A7404AD1FAEB67A0099E245 /* LargeInlineTextFieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeInlineTextFieldViewModel.swift; sourceTree = "<group>"; };
 		0AA1C35C1FAFFB9100009CD2 /* Chameleon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Chameleon.xcodeproj; path = Carthage/Checkouts/Chameleon/Chameleon.xcodeproj; sourceTree = "<group>"; };
 		0AAF996C1FAE9F1400FDC407 /* LargeInlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeInlineTextField.swift; sourceTree = "<group>"; };
@@ -723,8 +723,8 @@
 		0A7404A31FAEB3850099E245 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0A7404A41FAEB3850099E245 /* LargeInlineTextField.swift */,
-				0A7404A51FAEB3850099E245 /* LargeInlineTextField.xib */,
+				0A7404A41FAEB3850099E245 /* InlineTextField.swift */,
+				0A7404A51FAEB3850099E245 /* InlineTextField.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1199,7 +1199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A7404A71FAEB3850099E245 /* LargeInlineTextField.xib in Resources */,
+				0A7404A71FAEB3850099E245 /* InlineTextField.xib in Resources */,
 				0A0515951F257303002FFE45 /* LaunchScreen.storyboard in Resources */,
 				0A0515921F257303002FFE45 /* Assets.xcassets in Resources */,
 				0A0515901F257303002FFE45 /* Main.storyboard in Resources */,
@@ -1256,7 +1256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A7404A61FAEB3850099E245 /* LargeInlineTextField.swift in Sources */,
+				0A7404A61FAEB3850099E245 /* InlineTextField.swift in Sources */,
 				0A58DC8F1F2E400500087340 /* Answer.swift in Sources */,
 				0AF629D01F3687E300CED1E2 /* QuestionProtocols.swift in Sources */,
 				0A58DC901F2E400500087340 /* Question.swift in Sources */,
