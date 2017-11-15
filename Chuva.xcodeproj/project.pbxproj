@@ -19,7 +19,6 @@
 		0A58DC8F1F2E400500087340 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58DC8D1F2E400500087340 /* Answer.swift */; };
 		0A58DC901F2E400500087340 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58DC8E1F2E400500087340 /* Question.swift */; };
 		0A5D6EB81FB155690097B194 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1C3651FAFFB9200009CD2 /* Chameleon.framework */; };
-		0A5D6EB91FB155690097B194 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A626AA01F52677100733930 /* Eureka.framework */; };
 		0A5D6EBA1FB155690097B194 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAF99821FAEA7ED00FDC407 /* ReactiveCocoa.framework */; };
 		0A5D6EBB1FB155690097B194 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAF999B1FAEA80C00FDC407 /* ReactiveSwift.framework */; };
 		0A5D6EBC1FB155690097B194 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAF99B41FAEA81D00FDC407 /* Result.framework */; };
@@ -77,20 +76,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 109256641F248E8800B3C32A;
 			remoteInfo = DiskExample;
-		};
-		0A626A9F1F52677100733930 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A626A9A1F52677100733930 /* Eureka.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 51729DEB1B9A4F5E004A00EB;
-			remoteInfo = Eureka;
-		};
-		0A626AA11F52677100733930 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A626A9A1F52677100733930 /* Eureka.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 51729DF51B9A4F5E004A00EB;
-			remoteInfo = EurekaTests;
 		};
 		0AA1C3641FAFFB9200009CD2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -385,7 +370,6 @@
 		0A5D6F261FB155730097B194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A5D6F271FB155730097B194 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		0A5D6F281FB155730097B194 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
-		0A626A9A1F52677100733930 /* Eureka.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Eureka.xcodeproj; path = ../Eureka/Eureka.xcodeproj; sourceTree = "<group>"; };
 		0A7404A41FAEB3850099E245 /* InlineTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InlineTextField.swift; sourceTree = "<group>"; };
 		0A7404A51FAEB3850099E245 /* InlineTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InlineTextField.xib; sourceTree = "<group>"; };
 		0A7404AD1FAEB67A0099E245 /* TextFieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewModel.swift; sourceTree = "<group>"; };
@@ -393,8 +377,6 @@
 		0A7B6E001FB55269003B31DD /* TextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextField.xib; sourceTree = "<group>"; };
 		0A7B6E041FB5548E003B31DD /* InlineTextFieldViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InlineTextFieldViewModel.swift; sourceTree = "<group>"; };
 		0AA1C35C1FAFFB9100009CD2 /* Chameleon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Chameleon.xcodeproj; path = Carthage/Checkouts/Chameleon/Chameleon.xcodeproj; sourceTree = "<group>"; };
-		0AAF996C1FAE9F1400FDC407 /* LargeInlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeInlineTextField.swift; sourceTree = "<group>"; };
-		0AAF996E1FAE9F4000FDC407 /* LargeInlineTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LargeInlineTextField.xib; sourceTree = "<group>"; };
 		0AAF99711FAEA7ED00FDC407 /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = Carthage/Checkouts/ReactiveCocoa/ReactiveCocoa.xcodeproj; sourceTree = "<group>"; };
 		0AAF998C1FAEA80C00FDC407 /* ReactiveSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveSwift.xcodeproj; path = Carthage/Checkouts/ReactiveSwift/ReactiveSwift.xcodeproj; sourceTree = "<group>"; };
 		0AAF99A51FAEA81D00FDC407 /* Result.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Result.xcodeproj; path = Carthage/Checkouts/Result/Result.xcodeproj; sourceTree = "<group>"; };
@@ -418,7 +400,6 @@
 			files = (
 				0A5D6F321FB1557A0097B194 /* Disk.framework in Frameworks */,
 				0A5D6EB81FB155690097B194 /* Chameleon.framework in Frameworks */,
-				0A5D6EB91FB155690097B194 /* Eureka.framework in Frameworks */,
 				0A5D6EBA1FB155690097B194 /* ReactiveCocoa.framework in Frameworks */,
 				0A5D6EBB1FB155690097B194 /* ReactiveSwift.framework in Frameworks */,
 				0A5D6EBC1FB155690097B194 /* Result.framework in Frameworks */,
@@ -450,7 +431,6 @@
 				0A0515A91F257303002FFE45 /* ChuvaUITests */,
 				0A0515881F257303002FFE45 /* Products */,
 				0A0515B81F257615002FFE45 /* Frameworks */,
-				0A74048A1FAEB35D0099E245 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -507,7 +487,6 @@
 				0AAF998C1FAEA80C00FDC407 /* ReactiveSwift.xcodeproj */,
 				0AAF99711FAEA7ED00FDC407 /* ReactiveCocoa.xcodeproj */,
 				0AB2516E1F5BAA260075AD12 /* Disk.framework */,
-				0A626A9A1F52677100733930 /* Eureka.xcodeproj */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -706,24 +685,6 @@
 				0A5D6F281FB155730097B194 /* UIImage+Extension.swift */,
 			);
 			path = Tests;
-			sourceTree = "<group>";
-		};
-		0A626A9B1F52677100733930 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0A626AA01F52677100733930 /* Eureka.framework */,
-				0A626AA21F52677100733930 /* EurekaTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		0A74048A1FAEB35D0099E245 /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				0AAF996C1FAE9F1400FDC407 /* LargeInlineTextField.swift */,
-				0AAF996E1FAE9F4000FDC407 /* LargeInlineTextField.xib */,
-			);
-			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		0A7404A31FAEB3850099E245 /* Views */ = {
@@ -974,10 +935,6 @@
 					ProjectRef = 0A5D6F101FB155730097B194 /* DiskExample.xcodeproj */;
 				},
 				{
-					ProductGroup = 0A626A9B1F52677100733930 /* Products */;
-					ProjectRef = 0A626A9A1F52677100733930 /* Eureka.xcodeproj */;
-				},
-				{
 					ProductGroup = 0AAF99721FAEA7ED00FDC407 /* Products */;
 					ProjectRef = 0AAF99711FAEA7ED00FDC407 /* ReactiveCocoa.xcodeproj */;
 				},
@@ -1019,20 +976,6 @@
 			fileType = wrapper.application;
 			path = DiskExample.app;
 			remoteRef = 0A5D6F301FB155730097B194 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0A626AA01F52677100733930 /* Eureka.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Eureka.framework;
-			remoteRef = 0A626A9F1F52677100733930 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0A626AA21F52677100733930 /* EurekaTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = EurekaTests.xctest;
-			remoteRef = 0A626AA11F52677100733930 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		0AA1C3651FAFFB9200009CD2 /* Chameleon.framework */ = {
